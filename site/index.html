@@ -1,15 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>为什么我爱宝贝</title>
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+		}
+
+
+		.row{
+			width:100%;
+		}
+
+
+		div.inside{
+			position: relative;
+			width:90%;
+			height:120px;
+			background: gray;
+			margin:auto;
+			margin-top:40px;
+			border:1px solid black;
+			padding:0px;
+			overflow:hidden;
+		}
+
+		.food{
+			position: absolute;
+			text-align: center;
+			font-size:20px;
+			right:0px;
+			top:0px;
+			width:80px;
+			height:30px;
+			margin:0px;
+		}
+
+		@media (min-width:992px){
+			.col-lg-4{
+				float:left;
+				width:33%;
+			}
+
+		}
+		@media (min-width:768px) and (max-width:991px){
+			.col-md-6{
+				float:left;
+				width:50%;
+			}
+			.col-md-12{
+				float:left;
+				width:100%;
+			}
+		}
+		@media (max-width: 767px){
+			.col-sm-12{
+				float:left;
+				width:100%;
+			}
+		}
+
+	</style>
 </head>
 <body>
-以下原因：
-   <ul>
-      <li> 宝贝善良</li>
-      <li> 宝贝美丽</li>
-      <li> 宝贝最疼我了。。。</li>
-   </ul>
-   还有各种各样理由
+
+<div style="text-align: center;"> <p><h1>Our Menu</h1></p></div>
+
+<div class='row'>
+	<div class='col-lg-4 col-md-6 col-sm-12'>
+		<div class='inside'>
+			<p class='food' style="background: pink">chicken</p>
+			<p style="margin:31px">kjlerkjelkj jkhkjehr kjhew kjh erkjh skjh ekjhwe krk wekjhr kwjehr wkejrhwke kj kejh wkejh kjwehr kjh ewkjhk wk wk hjerkw kwh kwkwh khwe rkjh wkjh er wkejhr kwj</p>
+		</div>
+	</div>
+
+	<div class='col-lg-4 col-md-6 col-sm-12'>
+		<div class='inside'>
+			<p class='food' style="background: red">Beef</p>
+			<p style="margin:31px">kjlerkjelkj jkhkjehr kjhew kjh erkjh skjh ekjhwe krk wekjhr kwjehr wkejrhwke kj kejh wkejh kjwehr kjh ewkjhk wk wk hjerkw kwh kwkwh khwe rkjh wkjh er wkejhr kwj</p>
+		</div>
+	</div>
+
+
+	<div class='col-lg-4 col-md-12 col-sm-12 '>
+		<div class='inside'>
+			<p class='food' style="background: yellow">Sushi</p>
+			<p style="margin:31px">kjlerkjelkj jkhkjehr kjhew kjh erkjh skjh ekjhwe krk wekjhr kwjehr wkejrhwke kj kejh wkejh kjwehr kjh ewkjhk wk wk hjerkw kwh kwkwh khwe rkjh wkjh er wkejhr kwj</p>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
 </body>
 </html>
